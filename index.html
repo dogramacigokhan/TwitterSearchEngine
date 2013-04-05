@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Twitter search engine</title>
+		
+		<link href="styles/main.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="scripts/Screen.js"></script>
+		
+		<script type="text/javascript" src="scripts/Templates.js"></script>
+		
+		<script type="text/javascript" src="scripts/Service.js"></script>
+		<script type="text/javascript" src="scripts/TweetSearchManager.js"></script>
+		
+	</head>
+	<body>
+		<div class="main_container">
+			
+			<div class="main_logo"><img alt="" src="images/twitter.png" /></div>
+			
+			<div id='search-box'>
+				<div id='search-form'>
+			    	<input id='search-text' name='q' placeholder='Search tweets...' type='text'/>
+			    	<button id='search-button' onclick="SearchTweets()"><span>Search</span></button>
+				</div>
+			</div>
+			
+			<div class="tweet_results">
+				
+				<div class="loading_bar_container">
+					<div class="loading_bar_inner_container">
+						<div class="loading_bar">
+							<img alt="" src="images/loading.gif" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="tweet_not_found"><img alt="" src="images/twitter_sad.png" /><span id="tweet_not_found_text">No tweets found.. :(</span></div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+
