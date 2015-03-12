@@ -1,4 +1,4 @@
 TwitterSearchEngine
 ===================
 
-Twitter search engine for WS Lab.
+Twitter search engine.
